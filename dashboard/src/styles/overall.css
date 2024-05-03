@@ -1,0 +1,73 @@
+.mainTbale{
+    padding: 20px;
+    .rdt_TableHeader{
+        padding: 0;
+        min-height: auto;
+        margin-bottom: 10px;
+        > div{
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+    }
+    .common-table{
+        border-radius: 10px;
+        border: 1px solid #e5e5e5;
+        overflow: auto;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        .rdt_TableHeadRow,
+        .rdt_TableRow{
+            min-height: 40px;
+        }
+        .rdt_TableRow{
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(var(--primary-code), 0.1);
+            }
+        }
+        .rdt_TableHeadRow{
+            background-color: #e9ecef;
+            color: rgba(33, 37, 41, 0.75);
+        }
+    }
+    .rdt_Pagination{
+        margin-top: 5px;
+        min-height: auto;
+        border: none;
+        margin-bottom: 10px;
+    }
+}
+.backButton{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    &:hover{
+        background-color: rgba(var(--primary-code), 0.1);
+    }   
+}
+.chartsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 80vw), 1fr));
+    gap: 20px;
+    .charts{
+        padding: 20px;
+        background-color: #F4F5F6;
+        border-radius: 10px;
+        width: 100%;
+        border: 1px solid #e5e5e5;
+        > div{
+            display: flex;
+            justify-content: center;
+        }
+        &.barChart{
+            > div{
+                max-height: 200px;
+            }
+        }
+    }
+}
