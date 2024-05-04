@@ -24,14 +24,15 @@ Trcaking information:
         # Important:- Component is mentioned as URL page we are using
    # Backend
       we are using the type ORM for database connections.
-       Run the project in devepoment:-
+       Run the project in development:-
          #npm i
          #npm run dev
         Run in production:-
           # npm i
           # npm run start.
    # DashBoard
-     It is use for show the tracking information through chart and tables.
+     It is usind for showing the tracking information through chart and tables.
+     It is created by using react js
      # Informations:
          1.Time spend on website.
          2. Time spent on pages.
