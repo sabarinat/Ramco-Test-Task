@@ -1,5 +1,6 @@
 import axios from "axios";
-const APIURL = "http://localhost:3001";
+import { APIURL } from "./common-datas";
+
 
 export const getComponentDetailsByOverall = async (component) => {
     const data = await axios.get(

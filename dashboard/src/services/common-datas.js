@@ -40,6 +40,7 @@ const eventColumnDatas = () => {
   ]);
 }
 
+export const APIURL = 'http://localhost:3000'
 export default {
   componentColumnDatas: componentColumnDatas,
   eventColumnDatas: eventColumnDatas

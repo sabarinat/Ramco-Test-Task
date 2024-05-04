@@ -1,6 +1,8 @@
 import axios from "axios";
-const APIURL = "http://localhost:3001";
+import { APIURL } from "./common-datas";
+
 export const getComponent = async () => {
+  console.log("apiurl", APIURL, process.env);
   const data = await axios.get(`${APIURL}/getComponentDetails`);
   return data.data.list;
 };

@@ -21,6 +21,7 @@ const getEventDetailsByComponent = async (id: number) => {
   const entities = await entityManager
     .createQueryBuilder()
     .select(["id", "time", "component", "event"])
+    .addSelect("DATE_FORMAT(time, '%Y-%m-%d %H:%i:%s')", 'time')
     .from(Events, "events")
     .where("events.time >= :startTime AND events.time <= :endTime", {
       startTime: startTime,

@@ -5,6 +5,7 @@
   "username": "root",
   "password": "root",
   "database": "website_tracker",
-  "entities": ["src/app/entities/*.ts"],
+  "entities": ["src/app/entities/*.ts",
+               "dist/src/app/entities/*"],
   "synchronize": true
 }

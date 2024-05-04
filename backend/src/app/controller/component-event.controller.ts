@@ -15,7 +15,7 @@ const addNewComponentTracks = async (req: Request, res: Response, next: NextFunc
 //get component details
 const getComponentDetails = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const componentData = await componentService.getComponentDetails(req.query);
+    const componentData = await componentService.getComponentDetails();
     res
       .status(200)
       .json({

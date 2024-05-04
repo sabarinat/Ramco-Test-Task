@@ -13,7 +13,7 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use('/', router)
 app.use(errorHandler);
-app.listen(3001, () => {
+app.listen(3000, () => {
     console.log('server is listen in 3000')
    createConnection()
      .then(() => {

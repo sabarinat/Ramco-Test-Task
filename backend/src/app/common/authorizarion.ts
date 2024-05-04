@@ -1,7 +1,7 @@
 import { Request, Response, ErrorRequestHandler, NextFunction } from "express";
 import { AuthorizationError } from "../error-handler/authorization.error";
 import { verifyToken } from "./accesstoken";
-import { RequestToken } from "../interface/common.interface";
+
 
 export const middleware = async (req: any, res:Response, next: NextFunction) => {
    try {
